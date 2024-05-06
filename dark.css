@@ -1,0 +1,11 @@
+body {
+    background-color: var(--bg);
+    color: var(--black);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .dark-mode {
+    --bg: #333333;
+    --black: #ffffff;
+    --light-orange:#333333;
+    --orange:#333333;
+  }

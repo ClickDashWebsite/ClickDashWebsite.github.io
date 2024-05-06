@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+   <link href='eval.css' rel='stylesheet'>
+   <link rel="stylesheet" href="sharedStyles.css">
+
+	<title>Evaluation</title>
+	
+	
+
+</head>
+<body>
+
+  <a href="index.html" accesskey="h"></a>
+  <a href="restaurant.html" accesskey="t"></a>
+<a href= "cart.html" accesskey="c"></a>
+<a href= "evaluation.html" accesskey="e"></a>
+<header style=" margin-top: 1%;">
+    <img class="nav logo" src="images/weblogo.png" alt="logo pic" width="90px" style=" margin-left: 1%;" >
+<nav>
+    <ul class="nav_links">
+        <li id="Homepage" style=" margin-left: 40px;"><a href="index.html"> Home </a></li>
+        <li id="restaurantspage"><a href="restaurants.html"> Restaurants  </a></li>
+        <li id="Ownerpage"><a href="OwnerDashboard.html"> Owner dashboard  </a></li>
+    </ul>
+</nav>
+<a class="cta" href="#"> <button> </button></a>
+
+</header>
+<ul class="breadcrumb">
+  <li><a href="index.html">HomePage</a></li>
+  <li><a href="restaurants.html">Restaurants</a></li>
+  <li><a href="resturant.html">Restaurant</a></li>
+   <li><a href="cart.html">Cart</a></li>
+  <li>Evaluation</li>
+</ul>
+		<div id="page-header">
+ </div>
+    <img src="images/loc.gif" alt="location image" id="loc-image">
+<h1 id="title">We delivered your order!</h1>
+<h2 id="subtitle">Hope you enjoy it!</h2>
+<h2 id="subtitle">#444285242</h2>
+
+	<div class="wrapper">
+	
+		<h3>How was your experience at<br><h3 id="restaurant_name">Brew Bliss Café</h3></h3>
+
+		<form action="#" method="post">
+			<div class="rating">
+				<input type="number" name="rating" hidden>
+				<i class='bx bx-star star' style="--i: 0;"></i>
+				<i class='bx bx-star star' style="--i: 1;"></i>
+				<i class='bx bx-star star' style="--i: 2;"></i>
+				<i class='bx bx-star star' style="--i: 3;"></i>
+				<i class='bx bx-star star' style="--i: 4;"></i>
+			</div>
+			<textarea name="opinion" cols="30" rows="5" placeholder="Give your feedback here..."></textarea>
+			<div class="btn-group">
+				<button type="submit" class="btn submit">Submit</button>
+				<button class="btn cancel">Skip</button>
+			</div>
+		</form>
+	</div>
+	    <script src="eval.js"></script>
+
+  
+	 
+	 <h3 id="subtitle">Or<br><h2 id="subtitle">Do you want to evaluate another order?</h2></h3>
+	 
+	 <form action="#" method="post">
+	 <div class="orders">
+	 <label for="another_order"></label><br>
+		 <Select id="another_order" name="another_order">
+			  <option value="Brew Bliss Café">Brew Bliss Café</option>
+			  <option value="Altopiano">Altopiano</option>
+			  <option value="Cipriani">Cipriani</option>
+			  <option value="Azzurro">Azzurro</option>
+		 </Select><br><br><br><br><br><br><br><br>
+	 </div>
+	 </form>
+	 <footer>
+        <div class="footer_container">
+            <div class="footer-content">
+                <img class="footerlogo" src="images/weblogo.png" alt="logo" width="130" margin-left="5%" >
+                <p id="enjoy">Anytime and anywhere, enjoy your delicious food!!</p>
+                
+            </div>
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                 <ul class="list">
+                    <li><a href="mailto:clickdash@gmail.com">Email: ClickDash@gmail.com</a></li>
+
+                 </ul>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/profile.php?id=61557462044147"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/click._dash/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://twitter.com/Dash_Click"><i class="fa-brands fa-x-twitter"></i></a></li>
+                </ul>
+                </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&copy; 2024 ClickDash</p>
+        </div>
+    </footer>
+    <script>
+        // Check if the user preference for dark mode is stored in localStorage
+        const isDarkMode = localStorage.getItem('darkMode') === 'true';
+        // If it is, apply the dark mode class to the body
+        if (isDarkMode) {
+          document.body.classList.add('dark-mode');
+        }
+    
+        function toggleDarkMode() {
+          const body = document.body;
+          // Toggle the dark mode class on the body
+          body.classList.toggle('dark-mode');
+          // Store the user's preference for dark mode in localStorage
+          localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+        }
+      </script>
+    
+</body>
+</html>

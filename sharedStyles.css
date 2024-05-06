@@ -1,0 +1,257 @@
+:root {
+  --primary: #FD744A;
+  --white: #ffffff;
+  --bg: #FEF9F5; /* background */
+  --black: #000000;
+  --orange: #FFD5C9; /* bottom footer */
+  --light-orange: #FFE9E1; /* footer */
+  --light-yellow: #eebbbb; /* icon footer */
+}
+
+header {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+}
+
+li, a, button {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--black);
+  text-decoration: none;
+}
+
+header {
+  padding-top: 14px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navlogo {
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.cta {
+  padding-right: 20px;
+}
+
+.nav_links {
+  padding-right: 70px;
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 40px;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: var(--primary);
+}
+
+.cta button {
+  background: url(images/cart.png);
+  background-size: contain;
+  width: 15px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.footerlogo {
+  margin-left: 30%;
+  background: var(--light-orange);
+}
+
+footer {
+  background: var(--light-orange);
+  padding-top: 50px;
+}
+
+.footer_container {
+  width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  background: var(--light-orange);
+  width: 33.3%;
+}
+
+.footer-content h3 {
+  background: var(--light-orange);
+
+  font-weight: 470;
+  color: var(--black);
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.footer-content a {
+  background: var(--light-orange);
+
+  color: var(--black);
+}
+
+.footer-content p {
+  
+  color: var(--black);
+  width: 190px;
+  margin: auto;
+  padding: 7px;
+}
+
+.footer-content ul {
+  background: var(--light-orange);
+
+  text-align: center;
+}
+
+.list {
+  
+  padding: 0;
+}
+
+.list li {
+  background: var(--light-orange);
+
+  width: auto;
+  text-align: center;
+  list-style-type: none;
+  padding: 7px;
+  position: relative;
+}
+
+.list li::before {
+  
+  content: '';
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: var(--orange);
+  transition-duration: .5s;
+}
+
+.list li:hover::before {
+  width: 70px;
+}
+
+.social-icons {
+  
+  text-align: center;
+  padding: 0;
+}
+
+.social-icons li {
+  background: var(--light-orange);
+
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+}
+
+.social-icons i {
+  
+  background: var(--light-orange);
+
+  color: var(--light-yellow);
+  font-size: 25px;
+}
+
+.footer-content > a {
+  text-decoration: none;
+}
+
+a:hover header {
+  color: var(--orange);
+}
+
+.social-icons i:hover {
+  color: var(--orange);
+}
+#enjoy{
+  background: var(--light-orange);
+
+}
+.bottom-bar {
+  background: var(--orange);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px;
+}
+
+.bottom-bar p {
+  background: var(--orange);
+  color: var(--black);
+  margin: 0;
+  font-size: 16px;
+  padding: 7px;
+}
+
+ul.breadcrumb {
+  font-family: 'Poppins', sans-serif;
+  padding: 25px;
+  list-style: none;
+  background-color: none;
+  margin-left: 0%;
+  /* Set margin-left to 0 */
+  text-align: left;
+  /* Set text-align to left */
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  font-family: 'Poppins', sans-serif;
+  display: inline;
+  font-size: 14px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: var(--black);
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  font-family: 'Poppins', sans-serif;
+  color: #CF8B7E;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+/*================================DARK MOOD============================================*/
+
+
+body {
+  background-color: var(--bg);
+  color: var(--black);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  --bg: #333333;
+  --black: #ffffff;
+  --light-orange:#333333;
+  --orange:#333333;
+}

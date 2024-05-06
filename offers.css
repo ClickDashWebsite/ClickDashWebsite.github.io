@@ -1,0 +1,161 @@
+:root {
+  --primary: #FD744A;
+  --white: #ffffff;
+  --bg: #FEF9F5; /* background */
+  --black: #000000;
+  --orange: #FFD5C9; /* bottom footer */
+  --light-orange: #FFE9E1; /* footer */
+  --light-yellow: #eebbbb; /* icon footer */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: gray;
+  background-color: var(--bg);
+}
+
+.photo-offer {
+  width: 100%;
+  height: auto;
+  border-style: outset;
+  border: 1%;
+  background-color: var(--light-orange);
+}
+
+h2 {
+  color: black;
+}
+
+.postContent h3 {
+  color: var(--primary);
+  font-style: italic;
+}
+
+.photo-offer h1 {
+  text-shadow: non;
+  text-indent: 5%;
+  text-shadow: 2px 2px #FFC0CB;
+  text-align: left;
+  padding: 40px;
+  color: var(--primary);
+  font-family: Poppins, sans-serif;
+  z-index: 1;
+}
+
+#logoOffers {
+  float: left;
+  padding: 2% 0% 0% 2%;
+}
+
+h2,
+.postContent {
+  padding-left: 1%;
+}
+
+main {
+  border-color: rgb(225, 235, 225);
+  border: 1%;
+  padding: 1%;
+  margin: 1%;
+}
+
+fieldset ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.avo {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin-right: 20px;
+  border: 1px;
+  border-radius: 8px;
+  padding: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 10px 10px rgba(188, 81, 152, 0.213);
+}
+
+.avo {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.button-container button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: var(--primary);
+}
+
+.add-button {
+  background-color: var(--primary);
+}
+
+.Done {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 10px;
+  border: none;
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.avo {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.avo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.avo input[type="checkbox"] {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/*================================DARK MOOD============================================*/
+
+
+body {
+  background-color: var(--bg);
+  color: var(--black);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  --bg: #333333;
+  --black: #ffffff;
+  --light-orange:#333333;
+  --orange:#333333;
+}

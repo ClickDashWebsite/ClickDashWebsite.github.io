@@ -1,7 +1,412 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Click And Dash Project</h1>
-<p>Ready to be deployed</p>
-</body>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickDash</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="indexStyle.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $(".toggle").on("click", function() {
+                if ($(".item").hasClass("active")) {
+                    $(".item").removeClass("active");
+                } else {
+                    $(".item").addClass("active");
+                }
+            });
+        });
+    </script>
+
+  </head>
+
+  <body>
+
+
+    <header>
+      <nav>
+          <ul class="menu">
+              <li class="logo"><a href="#"><img src="images/weblogo.png" alt="logo" style="width: 90px;"></a></li>
+              <li class="item m"><a href="index.html">Home</a></li>
+              <li class="item m"><a href="restaurants.html">Restaurants</a></li>
+              <li class="item m"><a href="OwnerDashboard.html">Owner dashboard</a></li>
+              <li class="item button"><a href="cart.html"><img src="images/cart.png" alt="" style="height: 20px;"></a></li>
+              <li class="toggle"><span class="bars"></span></li>
+          </ul>
+      </nav>
+      </header>
+      <button class="normal" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+      <!--======================= Box1 + hungry  =================-->
+
+ <div id="Box1">
+    <div id="motobox"><img id="moto" src="images/moto.png" alt="motocycle pic" ></div> 
+ 
+ 
+     <p id="hungry">Hungry?? <br> you're in the right place!!</p>
+        </div>
+
+      <!--=======================offer  =================-->
+
+
+    <section id="tranding">
+      <div class="container">
+        <h3 class="text-center section-subheading">- popular Delivery -</h3>
+        <h1 class="text-center section-heading">Best Offers</h1>
+      </div>
+
+
+      <div class="container">
+        <div class="swiper tranding-slider">
+          <div class="swiper-wrapper">
+            
+            <!-- Slide-start  1 OFFER-->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/offerPic3.jpg" alt="Tranding">
+               
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price" style="font-size: 20px;">limited-time menu!</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name" style="background-color: #00000045; ">
+                    <a href="resturant.html" style="text-decoration: none; color: white;"> Ballet </a>
+                  </h2>
+                  <p style="font-size: 12px; background-color: #00000045; ">"Check out our limited-time <br>winter menu items!</p>
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+
+
+            <!-- Slide-start 2 OFFER -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/offerPic4.jpg" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price" style="font-size: 30px;">%50</h1>
+
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name" style="background-color: #00000045; ">
+                    <a href="resturant.html" style="text-decoration: none; color: white;"> SHE BURGER</a>
+                  </h2>
+                  <p style="font-size: 12px; background-color: #00000045; ">Beefy and Delicious! Wagyu<br> Mushroom Truffle Burger  <br>with 50% off!! </p>
+
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start  3 OFFER-->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/offerPic2.jpg" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price" style="color:#ea622d; background-color: #00000096;">GET 1 FREE!!</h1>
+
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name" style="background-color: #00000045; padding-left: 3%;">
+                    <a href="resturant.html" style="text-decoration: none; color: white;">  Pasta Bar</a>
+                  </h2>
+                  <p style="font-size: 12px;  background-color: #00000045;">"Enjoy our delicious pasta, pizza,<br> and Get one extra Free "</p>
+
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start 4 Offer-->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/tranding-food-1.png" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">FREE Delivery</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name" style=" background-color: #00000046;">
+                    <a href="resturant.html" style="text-decoration: none; color: white;">  Mad Pizza</a>
+                  </h2>
+                  <p style="font-size: 12px;;  background-color: #00000045; ">Order more than one pizza <br>and get free delivery!!</p>
+
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start 5 Offer -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/bread3.jpg" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">$15</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name" style="background-color: #00000045;">
+                    <a href="resturant.html" style="text-decoration: none; color: white;">  Pane Cake</a></h2>
+                  <p style="font-size: 12px;;  background-color: #00000045; "> Don'tmiss out our Cheesecake <br> brioche with only 10$!!</p>
+
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/IMG_9259.JPG" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">$20</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name" style="background-color: #00000045; padding-left: 3%;"> SUSAM</h2>
+                  <p style="font-size: 12px;;  background-color: #00000045; padding-left: 3%; "> Try our new Mocha <br>Caramel Bliss!</p>
+
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+            <!-- Slide-start -->
+            <div class="swiper-slide tranding-slide">
+              <div class="tranding-slide-img">
+                <img src="images/sweet1.jpg" alt="Tranding">
+              </div>
+              <div class="tranding-slide-content">
+                <h1 class="food-price">8$</h1>
+                <div class="tranding-slide-content-bottom">
+                  <h2 class="food-name" style="background-color: #00000045; padding-left: 3%;">
+                    <a href="resturant.html" style="text-decoration: none; color: white;">  Ammara</a>
+                  </h2>
+                  <p style="font-size: 12px;;  background-color: #00000045; padding-left: 3%; ">Try out own new French toast!</p>
+                  <h3 class="food-rating">
+                    <span>4.5</span>
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <!-- Slide-end -->
+          </div>
+
+          <div class="tranding-slider-control">
+            <div class="swiper-button-prev slider-arrow">
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </div>
+            <div class="swiper-button-next slider-arrow">
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+<!--====================================================================== commentBox ===========================================================-->
+<p class="text-center section-heading" style="font-size: 3vw;"> <i class="fa-solid fa-quote-left"></i> Our Customers reviews <i class="fa-solid fa-quote-right"></i></p>
+
+<div class="reviews-container">
+  <!-- Review 1 -->
+  <div class="review-box">
+    <img src="images/profile_icon1.png" alt="Customer 1" class="user-pic">
+    <div class="user-info">
+      <dl id="comment"> 
+        <dt><strong>Noura:</strong></dt>
+        <dd>Perfect start to the day!</dd>
+      </dl>
+    </div>
+    <img src="images/comment.jpg" alt="Meal 1" class="meal-pic">
+  </div>
+   <!-- Review 1 -->
+   <div class="review-box">
+    <img src="images/profile_icon2.png" alt="Customer 1" class="user-pic">
+    <div class="user-info">
+      <dl id="comment"> 
+        <dt><strong>Saad:</strong></dt>
+        <dd>Best coffee Loved the cozy!</dd>
+      </dl>
+    </div>
+    <img src="images/comment2.jpg" alt="Meal 1" class="meal-pic">
+  </div>
+   <!-- Review 1 -->
+   <div class="review-box">
+    <img src="images/profile_icon3.png" alt="Customer 1" class="user-pic">
+    <div class="user-info">
+      <dl id="comment"> 
+        <dt><strong>Mohammed:</strong></dt>
+        <dd>my favorite restaurant!!</dd>
+      </dl>
+    </div>
+    <img src="images/comment3.jpg" alt="Meal 1" class="meal-pic">
+  </div>
+   <!-- Review 1 -->
+   <div class="review-box">
+    <img src="images/profile_icon4.png " alt="Customer 1" class="user-pic">
+    <div class="user-info">
+      <dl id="comment"> 
+        <dt><strong>Maha:</strong></dt>
+        <dd>they have most delicious pasta!</dd>
+      </dl>
+    </div>
+    <img src="images/comment4.jpg" alt="Meal 1" class="meal-pic">
+  </div>
+   <!-- Review 1 -->
+   <div class="review-box">
+    <img src="images/profile_icon5.png " alt="Customer 1" class="user-pic">
+    <div class="user-info">
+      <dl id="comment"> 
+        <dt><strong>Omar:</strong></dt>
+        <dd>Awesome flavor new burger!</dd>
+      </dl>
+    </div>
+    <img src="images/comment5.jpg" alt="Meal 1" class="meal-pic">
+  </div>
+   <!-- Review 1 -->
+   <div class="review-box">
+    <img src="images/profile_icon6.png " alt="Customer 1" class="user-pic">
+    <div class="user-info">
+      <dl id="comment"> 
+        <dt><strong>Sara:</strong></dt>
+        <dd>Tasty and affordable burgers </dd>
+      </dl>
+    </div>
+    <img src="images/comment6.jpg" alt="Meal 1" class="meal-pic">
+  </div>
+  <!-- Add more reviews as needed -->
+</div>
+  <!--======================= vision =================-->
+
+  </div> 
+     <dl id="vision">
+        <dt ><strong >Our Vision</strong></dt>
+        <dd>"Our vision is to revolutionize the way people experience food delivery by providing a seamless and personalized platform that connects hungry individuals with the flavors they crave. We aim to offer a diverse range of culinary options, from local favorites to international cuisines, delivered swiftly to our customers' doorsteps. With a commitment to quality, convenience, and innovation, we strive to become the go-to destination for satisfying cravings and discovering new culinary delights, making every meal an unforgettable experience."</dd>
+    </dl>
+    <!--======================= Footer =================-->
+
+    <footer>
+      
+      
+
+      <div class="Footer_container">   
+        <div class="footer-content">
+          <img class="footerlogo" src="images/weblogo.png" alt="logo" width="130" >
+          <p id="enjoy">Anytime and anywhere, enjoy your delicious food!!</p>
+          
+      </div>
+          <div class="footer-content">
+              <h3>Contact Us</h3>
+              <ul class="Footer_list">
+                <li><a href="mailto:clickdash@gmail.com">Email: ClickDash@gmail.com</a></li>
+              </ul>
+          </div>
+
+          <div class="footer-content">
+              <h3>Follow Us</h3>
+              <ul class="social-icons">
+                  <li><a href="https://www.facebook.com/profile.php?id=61557462044147"><i class="fab fa-facebook"></i></a></li>
+                  <li><a href="https://www.instagram.com/click._dash/"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://twitter.com/Dash_Click"><i class="fa-brands fa-x-twitter"></i></a></li>
+              </ul>
+          </div>
+
+      </div> <!-- end of container -->
+      <div class="bottom-bar">
+          <p>&copy; 2024 ClickDash</p>
+      </div>
+
+   
+    
+  </footer>
+  <script>
+    // Check if the user preference for dark mode is stored in localStorage
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    // If it is, apply the dark mode class to the body
+    if (isDarkMode) {
+      document.body.classList.add('dark-mode');
+    }
+
+    function toggleDarkMode() {
+      const body = document.body;
+      // Toggle the dark mode class on the body
+      body.classList.toggle('dark-mode');
+      // Store the user's preference for dark mode in localStorage
+      localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+    }
+  </script>
+
+  
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+
 </html>

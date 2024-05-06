@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="sharedStyles.css">
+
+  <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+ <script src="resturants.js"></script>
+
+  <title>Restaurants</title>
+
+
+</head>
+
+
+<body>
+
+<main>
+  <header>
+    <img class="nav logo" src="images/weblogo.png" alt="logo pic" width="90px" style=" margin-left: 1%;">
+    <nav>
+      <ul class="nav_links">
+        <li id="Homepage"><a href="index.html"> Home </a></li>
+        <li id="restaurantspage"><a href="restaurants.html"> Restaurants </a></li>
+        <li id="Ownerpage"><a href="OwnerDashboard.html"> Owner dashboard </a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="cart.html"> <button> </button></a>
+
+  </header>
+
+  <ul class="breadcrumb">
+    <li style="margin-right:1%;"><a href="index.html">HomePage</a></li>
+    <li style="color:black;">Restaurants</li>
+  </ul>
+
+  <div class="banner-container">
+  
+    <img src="images/rest_banner.png" class="res-heading" alt="Restaurants">
+        <div id="week-display" class="week-info" style="font-size: 18px; font-family: Times, Arial, sans-serif; font-weight: bold;  padding:2% 0 0 75%; color:#716D96"></div> 
+
+    <h1 class="banner-text">Restaurants</h1>
+    
+  </div>
+
+<div id="restaurants-container" style="padding-bottom:19%;">
+  <div class="card-flex" style="display: flex; flex-wrap: wrap; gap: 16px;">
+    <a href="resturant.html" class="card-link" style="flex: 1 1 calc(33.333% - 16px);">
+      <div class="card">
+        <img src="images/cafe.webp" class="card-img-left" alt="Brew Bliss Café">
+        <div class="card-body">
+          <h3 class="card-title">Brew Bliss Café</h3>
+          <p class="card-text" style="font-size: 13px;">Brew Bliss Café is a cozy and inviting cafe. Enjoy aromatic coffees, soothing teas, and specialty beverages. Indulge in freshly baked pastries, cakes, and savory snacks.</p>
+         <ul class="list-unstyled" style="display: flex; flex-direction: row; gap: 25px;">
+          <li>Coffee</li>
+          <li>Bakery</li>
+         </ul>
+
+          <div class="badge text-bg-light border">
+            <span class="badge-number">4.0</span>
+            <span class="badge-text">Reviews</span>
+          </div>
+        </div>
+      </div>  </a>
+
+    <a href="resturant.html" class="card-link" style="flex: 1 1 calc(33.333% - 16px);">
+      <div class="card">
+        <img src="images/Global.jpeg" class="card-img-left" alt="SpiceScape">
+        <div class="card-body">
+          <h3 class="card-title">SpiceScape</h3>
+          <p class="card-text" style="font-size: 13px;">SpiceScape presents a tantalizing fusion of global flavors. The menu combines aromatic spices and bold ingredients to create sensory-igniting dishes.</p>
+          <ul class="list-unstyled" style="display: flex; flex-direction: row; gap: 25px;">
+            <li>Global Fusion</li>
+          </ul>
+          <div class="badge text-bg-light border">
+            <span class="badge-number">3.5</span>
+            <span class="badge-text">Reviews</span>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="resturant.html" class="card-link" style="flex: 1 1 calc(33.333% - 16px);">
+      <div class="card">
+        <img src="images/American.jpeg" class="card-img-left" alt="Ember & Sage">
+        <div class="card-body">
+          <h3 class="card-title">Ember & Sage</h3>
+          <p class="card-text" style="font-size: 13px;">Ember & Sage offers rustic charm with contemporary elegance. The American cuisine highlights locally sourced ingredients and modern culinary techniques.</p>
+          <ul class="list-unstyled" style="display: flex; flex-direction: row; gap: 8px; margin-LEFT: -2%;">
+            <li >American</li>
+            <li>Steakhouse</li>
+          </ul>
+          <div class="badge text-bg-light border">
+            <span class="badge-number">2.3</span>
+            <span class="badge-text">Reviews</span>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="resturant.html" class="card-link" style="flex: 1 1 calc(33.333% - 16px);">
+      <div class="card">
+        <img src="images/Asian.jpeg" class="card-img-left" alt="Zenith Bistro">
+        <div class="card-body">
+          <h3 class="card-title">Zenith Bistro</h3>
+          <p class="card-text" style="font-size: 13px;">Zenith Bistro offers a modern take on traditional Asian flavors. From sushi to stir-fries, our fusion cuisine delights with every bite, blending East and West seamlessly.</p>
+          <ul class="list-unstyled" style="display: flex; flex-direction: row; gap: 25px;">
+            <li>Asian</li>
+          </ul>
+          <div class="badge text-bg-light border">
+            <span class="badge-number">4.0</span>
+            <span class="badge-text">Reviews</span>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="resturant.html" class="card-link" style="flex: 1 1 calc(33.333% - 16px);">
+      <div class="card">
+        <img src="images/Salad .avif" class="card-img-left" alt="Green Leaf Kitchen">
+        <div class="card-body">
+          <h3 class="card-title">Green Leaf Kitchen</h3>
+          <p class="card-text" style="font-size: 13px;">At Green Leaf Kitchen, indulge in guilt-free dining with our organic, plant-based cuisine. From vibrant salads to hearty grain bowls, every dish is a celebration of wholesome ingredients.</p>
+          <ul class="list-unstyled" style="display: flex; flex-direction: row; gap: 25px;">
+            <li>Salad</li>
+            <li>Healthy</li>
+          </ul>
+          <div class="badge text-bg-light border">
+            <span class="badge-number">5.0</span>
+            <span class="badge-text">Reviews</span>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="resturant.html" class="card-link" style="flex: 1 1 calc(33.333% - 16px);">
+      <div class="card">
+        <img src="images/Indian.avif" class="card-img-left" alt="Masala Junction">
+        <div class="card-body">
+          <h3 class="card-title">Masala Junction</h3>
+          <p class="card-text" style="font-size: 13px;">Masala Junction offers a modern twist on traditional Indian flavors. From street food to elegant curries, our fusion cuisine redefines Indian dining.</p>
+          <ul class="list-unstyled" style="display: flex; flex-direction: row; gap: 25px;">
+            <li>Indian</li>
+          </ul>
+          <div class="badge text-bg-light border">
+            <span class="badge-number">4.9</span>
+            <span class="badge-text">Reviews</span>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="resturant.html" class="card-link" style="flex: 1 1 calc(33.333% - 16px);">
+      <div class="card">
+        <img src="images/Mexican.avif" class="card-img-left" alt="Fiesta Mexicana">
+        <div class="card-body">
+          <h3 class="card-title">Fiesta Mexicana</h3>
+          <p class="card-text" style="font-size: 13px;">At Fiesta Mexicana, savor the authentic flavors of Mexico in every bite. From sizzling fajitas to zesty tacos, our cuisine is a fiesta of flavor and tradition.</p>
+          <ul class="list-unstyled" style="display: flex; flex-direction: row; gap: 25px;">
+            <li>Mexican</li>
+          </ul>
+          <div class="badge text-bg-light border">
+            <span class="badge-number">3.8</span>
+            <span class="badge-text">Reviews</span>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <a href="resturant.html" class="card-link" style="flex: 1 1 calc(33.333% - 16px);">
+      <div class="card">
+        <img src="images/Riyadh Spice House.jpeg" class="card-img-left" alt="Riyadh Spice House">
+        <div class="card-body">
+          <h3 class="card-title">Riyadh Spice House</h3>
+          <p class="card-text" style="font-size: 13px;">Riyadh Spice House invites you to savor authentic Saudi flavors. From aromatic kebabs to hearty rice dishes, experience the essence of Saudi cuisine.</p>
+          <ul class="list-unstyled" style="display: flex; flex-direction: row; gap: 25px;">
+            <li>Saudi Arabian</li>
+          </ul>
+          <div class="badge text-bg-light border">
+            <span class="badge-number">5.0</span>
+            <span class="badge-text">Reviews</span>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div id="restaurant-info" style="display: none;">
+    <img id="restaurant-icon" src="" alt="Restaurant Icon">
+    <h4 id="restaurant-label"></h4>
+    <p id="restaurant-rate"></p>
+    <p id="restaurant-cuisine"></p>
+    </div>
+  </div>
+  
+ 
+  
+  <footer>
+    <div class="footer_container">
+        <div class="footer-content">
+            <img class="footerlogo" src="images/weblogo.png" alt="logo" width="130" margin-left="5%" >
+            <p id="enjoy">Anytime and anywhere, enjoy your delicious food!!</p>
+            
+        </div>
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+             <ul class="list">
+                <li><a href="mailto:clickdash@gmail.com">Email: ClickDash@gmail.com</a></li>
+
+             </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/profile.php?id=61557462044147"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/click._dash/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/Dash_Click"><i class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+            </div>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy; 2024 ClickDash</p>
+    </div>
+</footer>
+ </main>
+ <script>
+  // Check if the user preference for dark mode is stored in localStorage
+  const isDarkMode = localStorage.getItem('darkMode') === 'true';
+  // If it is, apply the dark mode class to the body
+  if (isDarkMode) {
+    document.body.classList.add('dark-mode');
+  }
+
+  function toggleDarkMode() {
+    const body = document.body;
+    // Toggle the dark mode class on the body
+    body.classList.toggle('dark-mode');
+    // Store the user's preference for dark mode in localStorage
+    localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+  }
+</script>
+
+
+</body>
+
+
+</html>

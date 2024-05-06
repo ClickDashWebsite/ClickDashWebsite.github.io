@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400, 600, 700" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="menu.css">
+ <link rel="stylesheet" href="sharedStyles.css">
+ <script src="resturant.js"></script>
+
+  <title>Restaurant</title>
+
+</head>
+
+
+
+<body>
+  <a href="index.html" accesskey="h"></a>
+  <a href="restaurants.html" accesskey="m"></a>
+  <a href="restaurant.html" accesskey="t"></a>
+<a href= "cart.html" accesskey="c"></a>
+
+<header>
+  <img class="nav logo" src="images/weblogo.png" alt="logo pic" width="90px" style=" margin-left: 1%;">
+<nav>
+    <ul class="nav_links">
+        <li id="Homepage"><a href="index.html"> Home </a></li>
+        <li id="restaurantspage"><a href="restaurants.html"> Restaurants  </a></li>
+        <li id="Ownerpage"><a href="OwnerDashboard.html"> Owner dashboard  </a></li>
+        
+    </ul>
+</nav>
+<a class="cta" href="#"> <button id="addToCart"> </button></a>
+
+</header>
+
+<ul class="breadcrumb">
+  <li><a href="index.html">HomePage</a></li>
+  <li><a href="restaurants.html">Restaurants</a></li>
+  <li>Restaurant</li>
+</ul>
+
+                                      <!-- Resturant info -->
+  <div class="col-1">
+    <div class="content-box">
+      <div class="menu-title text-center mb-5">
+        <h2 class="resturant_name">Brew Bliss Café</h2>
+        <p class="resturant_info">123 Savor Street, Aroma City, Brewlandia</p>
+        <p class="resturant_info"><b>Open:</b> 8:00<sub>am</sub> - 11:30<sub>pm</sub></p>
+        <p class="resturant_info" style="margin-bottom: -1px;">Café Shop</p>
+        <h6 class="resturant_info" style="margin-top: 16px;">20 - 25 min | Free Delivery over 60<sup>SAR</sup></h6>
+      <div class="rating-container">
+        <span class="fa fa-star checked fa-lg "></span>
+        <span class="fa fa-star checked fa-lg"></span>
+        <span class="fa fa-star checked fa-lg"></span>
+        <span class="fa fa-star checked fa-lg"></span>
+        <span class="fa fa-star unchecked"></span> 
+        <p class="rating">4.0</p>
+       </div>
+      </div>
+    </div>
+  </div>
+                                    <!-- END Resturant info -->
+  
+                                      <!-- BACK -->
+  <div class="back_func">
+   <a href="restaurants.html">
+      <p><i class="arrow left"></i> <b> Back</b></p>
+   </a>
+  </div>
+                                     <!-- END BACK -->
+
+                                    <!-- SEARCH,SORT -->
+    <div class="container1">
+        <!-- Search Form -->
+        <form id="search-form">
+            <div class="search-bar">
+                <input type="search" id="search-input" placeholder="Search for a dish" class="search-input">
+                <button type="submit" class="search-button">Search</button>
+            </div>
+        </form>
+
+        <!-- Sort Bar -->
+        <div class="sort-bar">
+            <div class="custom-select">
+                <select id="sort-select">
+                    <optgroup label="Sort by Name">
+                        <option value="name-a-z">Name (A-Z)</option>
+                        <option value="name-z-a">Name (Z-A)</option>
+                    </optgroup>
+                    <optgroup label="Sort by Price">
+                        <option value="price-asc">Price (Ascending)</option>
+                        <option value="price-desc">Price (Descending)</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+    </div>
+                                  <!-- END SEARCH,SORT -->
+
+                                  <!-- CATEGORIES -->
+ <section id="list-topics" class="list-topics">
+  <div class="list-topics-content">
+   <ul class="filter-wrap filters col-lg-12 ">
+      <li class="active" data-filter=".hot-drinks" style="font-size: 35px; padding:0 1%;">Hot Drinks</li>
+      <li data-filter=".cold-drinks" style="font-size: 35px; padding:0 1%;">Cold Drinks</li>
+      <li data-filter=".sweets" style="font-size: 35px; padding:0 1%;">Sweets</li>
+      <li data-filter=".snacks" style="font-size: 35px; padding:0 1%;">Snacks</li>            
+  </ul>
+    <hr class="bg-light">
+  </div>
+</section>
+                                  <!-- END CATEGORIES -->
+
+                                  <!-- MENU ITEMS -->
+<main class="container">
+
+                                  <!-- HOT DRINKS -->
+
+ <div class="menu hot-drinks">
+  <div class="menu-group">
+    <div class="menu-item" role="tabpanel" style="display:flex; flex-direction: row; justify-content: space-between; align-items: flex-start; padding: 10px;">
+
+  <!-- Image on the Right -->
+  <div class="image-container" style="text-align: right;">
+    <img src="images/AMERICANO.png" alt="Cup of Americano" class="menu-item-img" />
+  </div>
+
+  <!-- Text in the Center -->
+  <div class="menu-item-text" style="flex-grow: 1; margin-left: 10px;">
+    <h3 class="menu-item-heading">
+      <span class="menu-item-name">AMERICANO</span>
+      <span class="menu-item-calories">9 <img src="images/calories.png" alt="Calorie image" class="cal-img"/></span>
+    </h3>
+    <p class="menu-item-desc">
+      Espresso shots topped with hot water create a light layer of crema culminating in this wonderfully rich cup with depth and nuance.
+    </p>
+  </div>
+
+ 
+    <!-- Price -->
+    <div class="price" style="font-size: 16px; flex-direction: column; padding:6% 2% 0 0;">
+      13.95<sup>SAR</sup>
+    </div>
+
+    <!-- Checkbox and Quantity -->
+    <div class="cont" style="padding: 11% 1% 0 0;"> <!-- Space above the checkbox and quantity -->
+      <div class="crtdiv" style="display: flex; align-items: center; justify-content: flex-end;">
+        <input type="checkbox" class="cart" aria-label="Select item" style="margin-right: 10px;" />
+        <div class="qty" style="display: flex; align-items: center;">
+          <span class="dec">-</span>
+          <span class="num">1</span>
+          <span class="inc">+</span>
+        </div>
+      </div>
+ 
+  </div>
+
+</div>
+
+
+         
+         
+         
+ <div class="menu-item" role="tabpanel" style="display: flex; justify-content: space-between; align-items: flex-start; padding: 10px;">
+
+  <!-- Image on the Right -->
+  <div class="image-container" style="flex-shrink: 0; text-align: right;">
+    <img src="images/MACCHIATO.png" alt="Cup of MACCHIATO Image" class="menu-item-img"  />
+  </div>
+
+  <!-- Text in the Center -->
+  <div class="menu-item-text" style="flex-grow: 1; margin-left: 10px;">
+    <h3 class="menu-item-heading">
+      <span class="menu-item-name">MACCHIATO</span>
+      <span class="menu-item-calories">115 <img src="images/calories.png" alt="Calorie image" class="cal-img"/></span>
+    </h3>
+    <p class="menu-item-desc">
+      Freshly steamed milk with vanilla-flavored syrup marked with espresso and topped with a caramel drizzle for an oh-so-sweet finish.
+    </p>
+  </div>
+
+  <!-- Price on the Left -->
+  <div class="price" style="font-size: 16px; flex-direction: column;  padding:6% 2% 0 0;">
+    23.50<sup>SAR</sup>
+  </div>
+
+  <!-- Checkbox and Quantity -->
+  <div class="cont" style="padding: 11% 1% 0 0;">
+    <div class="crtdiv" style="display: flex; align-items: center; justify-content: flex-end;">
+      <input type="checkbox" class="cart" aria-label="Select item" style="margin-right: 10px;" />
+      <div class="qty" style="display: flex; align-items: center;">
+        <span class="dec">-</span>
+        <span class="num">1</span>
+        <span class="inc">+</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+          
+          
+         <div class="menu-item" role="tabpanel" style="display: flex; justify-content: space-between; align-items: flex-start; padding: 10px;">
+
+  <!-- Image -->
+  <div class="image-container" style="flex-shrink: 0;">
+    <img src="images/CAPPUCCINO.jpg" alt="Cup of CAPPUCCINO Image" class="menu-item-img"  />
+  </div>
+
+  <!-- Text and Description -->
+  <div class="menu-item-text" style="flex-grow: 1; margin-left: 10px;">
+    <h3 class="menu-item-heading">
+      <span class="menu-item-name">CAPPUCCINO</span>
+      <span class="menu-item-calories">80 <img src="images/calories.png" alt="Calorie image" class="cal-img"/></span>
+    </h3>
+    <p class="menu-item-desc">
+      Dark, rich espresso lies in wait under a smoothed and stretched layer of thick milk foam. An alchemy of barista artistry and craft.
+    </p>
+  </div>
+
+  <!-- Price -->
+  <div class="col-lg-2" style="align-self: flex-start;  padding:6% 2% 0 0;">
+    <span class="price">19.00<sup>SAR</sup></span>
+  </div>
+
+  <!-- Checkbox and Quantity -->
+  <div class="cont" style="padding: 11% 1% 0 0;">
+    <div class="crtdiv" style="display: flex; align-items: center; justify-content: flex-end;">
+      <input type="checkbox" class="cart" aria-label="Select item" style="margin-right: 10px;" />
+      <div class="qty" style="display: flex; align-items: center;">
+        <span class="dec">-</span>
+        <span class="num">1</span>
+        <span class="inc">+</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+          
+      <div class="menu-item" role="tabpanel" style="display: flex; justify-content: space-between; align-items: flex-start; padding: 10px;">
+
+  <!-- Image -->
+  <div class="image-container" style="flex-shrink: 0;">
+    <img src="images/HOT CHOCOLATE.jpg" alt="Cup of HOT CHOCOLATE Image" class="menu-item-img" />
+  </div>
+
+  <!-- Text and Description -->
+  <div class="menu-item-text" style="flex-grow: 1; margin-left: 10px;">
+    <h3 class="menu-item-heading">
+      <span class="menu-item-name">HOT CHOCOLATE</span>
+      <span class="menu-item-calories">190 <img src="images/calories.png" alt="Calorie image" class="cal-img"/></span>
+    </h3>
+    <p class="menu-item-desc">
+      Steamed milk with chocolate-flavored syrups. Topped with sweetened whipped cream and chocolate-flavored drizzle. A timeless classic made to sweeten your spirits.
+    </p>
+  </div>
+
+  <!-- Price -->
+  <div class="col-lg-2" style="align-self: flex-start; padding:6% 2% 0 0;">
+    <span class="price">25.15<sup>SAR</sup></span>
+  </div>
+
+  <!-- Checkbox and Quantity -->
+  <div class="cont" style="padding: 11% 1% 0 0;">
+    <div class="crtdiv" style="display: flex; align-items: center; justify-content: flex-end;">
+      <input type="checkbox" class="cart" aria-label="Select item" style="margin-right: 10px;" />
+      <div class="qty" style="display: flex; align-items: center;">
+        <span class="dec">-</span>
+        <span class="num">1</span>
+        <span class="inc">+</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+          
+     <div class="menu-item" role="tabpanel" style="display: flex; justify-content: space-between; align-items: flex-start; padding: 10px;">
+
+  <!-- Image -->
+  <div class="image-container" style="flex-shrink: 0;">
+    <img src="images/greenTea.jpg.webp" alt="Cup of Green Tea Image" class="menu-item-img" />
+  </div>
+
+  <!-- Text and Description -->
+  <div class="menu-item-text" style="flex-grow: 1; margin-left: 10px;">
+    <h3 class="menu-item-heading">
+      <span class="menu-item-name">GREEN TEA</span>
+      <span class="menu-item-calories">3 <img src="images/calories.png" alt="Calorie image" class="cal-img"/></span>
+    </h3>
+    <p class="menu-item-desc">
+      This gently smoky, softly sweet green tea with mint is tasty no matter what language you say it in.
+    </p>
+  </div>
+
+  <!-- Price -->
+  <div class="col-lg-2" style="align-self: flex-start; padding:6% 2% 0 0;">
+    <span class="price">9.75<sup>SAR</sup></span>
+  </div>
+
+  <!-- Checkbox and Quantity -->
+  <div class="cont" style="padding: 11% 1% 0 0;">
+    <div class="crtdiv" style="display: flex; align-items: center; justify-content: flex-end;">
+      <input type="checkbox" class="cart" aria-label="Select item" style="margin-right: 10px;" />
+      <div class="qty" style="display: flex; align-items: center;">
+        <span class="dec">-</span>
+        <span class="num">1</span>
+        <span class="inc">+</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+</div>
+                                  <!-- END HOT DRINKS -->
+
+                                   <!-- COLD DRINKS -->
+    <div class="menu cold-drinks">
+      <div class="menu-group">
+       <div class="menu-item" role="tabpanel" style="display: flex; justify-content: space-between; align-items: flex-start; padding: 10px;">
+
+  <!-- Image -->
+  <div class="image-container" style="flex-shrink: 0;">
+    <img src="images/iced-americano.jpeg" alt="Cup of Iced Americano Image" class="menu-item-img" />
+  </div>
+
+  <!-- Text and Description -->
+  <div class="menu-item-text" style="flex-grow: 1; margin-left: 10px;">
+    <h3 class="menu-item-heading">
+      <span class="menu-item-name">ICED AMERICANO</span>
+      <span class="menu-item-calories">5 <img src="images/calories.png" alt="Calorie image" class="cal-img"/></span>
+    </h3>
+    <p class="menu-item-desc">
+      Quench your thirst with our invigorating Iced Americano, a refreshing blend of espresso and chilled water served over ice, offering a cool and revitalizing experience.
+    </p>
+  </div>
+
+  <!-- Price -->
+  <div class="col-lg-2" style="align-self: flex-start; padding:6% 2% 0 0;">
+    <span class="price">18.00<sup>SAR</sup></span>
+  </div>
+
+  <!-- Checkbox and Quantity -->
+  <div class="cont" style="padding: 11% 1% 0 0;">
+    <div class="crtdiv" style="display: flex; align-items: center; justify-content: flex-end;">
+      <input type="checkbox" class="cart" aria-label="Select item" style="margin-right: 10px;" />
+      <div class="qty" style="display: flex; align-items: center;">
+        <span class="dec">-</span>
+        <span class="num">1</span>
+        <span class="inc">+</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+          
+          
+    <div class="menu-item" role="tabpanel" style="display: flex; justify-content: space-between; align-items: flex-start; padding: 10px;">
+  
+  <!-- Image -->
+  <div class="image-container" style="flex-shrink: 0;">
+    <img src="images/smoothie.jpeg" alt="Cup of Smoothie Image" class="menu-item-img" />
+  </div>
+
+  <!-- Text and Description -->
+  <div class="menu-item-text" style="flex-grow: 1; margin-left: 10px;">
+    <h3 class="menu-item-heading">
+      <span class="menu-item-name">SMOOTHIE</span>
+      <span class="menu-item-calories">78 <img src="images/calories.png" alt="Calorie image" class="cal-img"/></span>
+    </h3>
+    <p class="menu-item-desc">
+      Filled with kiwi, banana, blueberries, strawberries, pineapple juice, and yogurt all blended together with ice.
+    </p>
+  </div>
+
+  <!-- Price -->
+  <div style="align-self: flex-start; padding: 6% 2% 0 0;">
+    <span class="price">17.50<sup>SAR</sup></span>
+  </div>
+
+  <!-- Checkbox and Quantity -->
+  <div class="cont" style="padding: 11% 1% 0 0;">
+    <div class="crtdiv" style="display: flex; align-items: center; justify-content: flex-end;">
+      <input type="checkbox" class="cart" aria-label="Select item" style="margin-right: 10px;" />
+      <div class="qty" style="display: flex; align-items: center;">
+        <span class="dec">-</span>
+        <span class="num">1</span>
+        <span class="inc">+</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+          
+     <div class="menu-item" style="display: flex; justify-content: space-between; align-items: flex-start; padding: 10px;">
+  
+  <!-- Image -->
+  <div class="image-container" style="flex-shrink: 0;">
+    <img src="images/Lemonade.jpeg" alt="Cup of LEMONADE Image" class="menu-item-img" />
+  </div>
+
+  <!-- Text and Description -->
+  <div class="menu-item-text" style="flex-grow: 1; margin-left: 10px;">
+    <h3 class="menu-item-heading">
+      <span class="menu-item-name">LEMONADE</span>
+      <span class="menu-item-calories">20 <img src="images/calories.png" alt="Calorie image" class="cal-img"/></span>
+    </h3>
+    <p class="menu-item-desc">
+      Refreshing and tangy, our homemade lemonade is a perfect blend of freshly squeezed lemons, pure cane sugar, and just the right amount of ice.
+    </p>
+  </div>
+
+  <!-- Price -->
+  <div style="align-self: flex-start; padding: 6% 2% 0 0;">
+    <span class="price">9.35<sup>SAR</sup></span>
+  </div>
+
+  <!-- Checkbox and Quantity -->
+  <div class="cont" style="padding: 11% 1% 0 0;">
+    <div class="crtdiv" style="display: flex; align-items: center; justify-content: flex-end;">
+      <input type="checkbox" class="cart" aria-label="Select item" style="margin-right: 10px;" />
+      <div class="qty" style="display: flex; align-items: center;">
+        <span class="dec">-</span>
+        <span class="num">1</span>
+        <span class="inc">+</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+</div>
+</div>
+                                  <!-- END COLD DRINKS -->
+
+                                      <!-- SWEETS -->
+ <div class="menu sweets">
+  <div class="menu-group">
+        <div class="menu-item" role="tabpanel" style="display: flex; justify-content: space-between; align-items: flex-start; padding: 10px;">
+  
+  <!-- Image -->
+  <div class="image-container" style="flex-shrink: 0;">
+    <img src="images/French-Croissants.jpeg" alt="CROISSANT Image" class="menu-item-img" />
+  </div>
+
+  <!-- Text and Description -->
+  <div class="menu-item-text" style="flex-grow: 1; margin-left: 10px;">
+    <h3 class="menu-item-heading">
+      <span class="menu-item-name">CROISSANT</span>
+      <span class="menu-item-calories">200 <img src="images/calories.png" alt="Calorie image" class="cal-img"/></span>
+    </h3>
+    <p class="menu-item-desc">
+      They are made with a yeast leavened dough that has been laminated with butter, in multiple layers.
+    </p>
+  </div>
+
+  <!-- Price -->
+  <div style="align-self: flex-start; padding: 6% 2% 0 0;">
+    <span class="price">10.95<sup>SAR</sup></span>
+  </div>
+
+  <!-- Checkbox and Quantity -->
+  <div class="cont" style="padding: 11% 1% 0 0;">
+    <div class="crtdiv" style="display: flex; align-items: center; justify-content: flex-end;">
+      <input type="checkbox" class="cart" aria-label="Select item" style="margin-right: 10px;" />
+      <div class="qty" style="display: flex; align-items: center;">
+        <span class="dec">-</span>
+        <span class="num">1</span>
+        <span class="inc">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+  <div class="menu-item" style="display: flex; justify-content: space-between; align-items: flex-start; padding: 10px;">
+  <!-- Image -->
+  <div class="image-container" style="flex-shrink: 0;">
+    <img src="images/Nutella-Cheesecake.jpeg" alt="NUTELLA CHEESECAKE Image" class="menu-item-img" />
+  </div>
+
+  <!-- Text and Description -->
+  <div class="menu-item-text" style="flex-grow: 1; margin-left: 10px;">
+    <h3 class="menu-item-heading">
+      <span class="menu-item-name">NUTELLA CHEESECAKE</span>
+      <span class="menu-item-calories">300 <img src="images/calories.png" alt="Calorie image" class="cal-img"/></span>
+    </h3>
+    <p class="menu-item-desc">
+      Experience pure indulgence with our decadent Nutella cheesecake. Each velvety bite is a symphony of rich, creamy cheesecake swirled with Nutella spread.
+    </p>
+  </div>
+
+  <!-- Price -->
+  <div style="align-self: flex-start; padding: 6% 2% 0 0;">
+    <span class="price">20.00<sup>SAR</sup></span>
+  </div>
+
+  <!-- Checkbox and Quantity -->
+  <div class="cont" style="padding: 11% 1% 0 0;">
+    <div class="crtdiv" style="display: flex; align-items: center; justify-content: flex-end;">
+      <input type="checkbox" class="cart" aria-label="Select item" style="margin-right: 10px;" />
+      <div class="qty" style="display: flex; align-items: center;">
+        <span class="dec">-</span>
+        <span class="num">1</span>
+        <span class="inc">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+   <div class="menu-item" style="display: flex; justify-content: space-between; align-items: flex-start; padding: 10px;">
+  <!-- Image -->
+  <div class="image-container" style="flex-shrink: 0;">
+    <img src="images/Chocolate--Brownie.jpeg" alt="BROWNIES Image" class="menu-item-img" />
+  </div>
+
+  <!-- Text and Description -->
+  <div class="menu-item-text" style="flex-grow: 1; margin-left: 10px;">
+    <h3 class="menu-item-heading">
+      <span class="menu-item-name">BROWNIES</span>
+      <span class="menu-item-calories">150 <img src="images/calories.png" alt="Calorie image" class="cal-img"/></span>
+    </h3>
+    <p class="menu-item-desc">
+      Rich, soft, fudgy, and chocolatey brownies topped with a scoop of ice cream and extra chocolate sauce.
+    </p>
+  </div>
+
+  <!-- Price -->
+  <div style="align-self: flex-start; padding: 6% 2% 0 0;">
+    <span class="price">17.20<sup>SAR</sup></span>
+  </div>
+
+  <!-- Checkbox and Quantity -->
+  <div class="cont" style="padding: 11% 1% 0 0;">
+    <div class="crtdiv" style="display: flex; align-items: center; justify-content: flex-end;">
+      <input type="checkbox" class="cart" aria-label="Select item" style="margin-right: 10px;" />
+      <div class="qty" style="display: flex; align-items: center;">
+        <span class="dec">-</span>
+        <span class="num">1</span>
+        <span class="inc">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+                                        <!-- END SWEETS -->
+
+                                        <!-- SNACKS -->
+ <div class="menu snacks">
+  <div class="menu-group">
+      <div class="menu-item" style="display: flex; justify-content: space-between; align-items: flex-start; padding: 10px;">
+  <!-- Image -->
+  <div class="image-container" style="flex-shrink: 0;">
+    <img src="images/salad.jpeg" alt="Fruit salad Image" class="menu-item-img" />
+  </div>
+
+  <!-- Text and Description -->
+  <div class="menu-item-text" style="flex-grow: 1; margin-left: 10px;">
+    <h3 class="menu-item-heading">
+      <span class="menu-item-name">FRUIT SALAD</span>
+      <span class="menu-item-calories">54 <img src="images/calories.png" alt="Calorie image" class="cal-img"/></span>
+    </h3>
+    <p class="menu-item-desc">
+      Dive into a burst of freshness with our vibrant fruit salad. A colorful medley of seasonal fruits, including watermelon, sweet strawberries, and pineapples.
+    </p>
+  </div>
+
+  <!-- Price -->
+  <div style="align-self: flex-start; padding: 6% 2% 0 0;">
+    <span class="price">21.00<sup>SAR</sup></span>
+  </div>
+
+  <!-- Checkbox and Quantity -->
+  <div class="cont" style="padding: 11% 1% 0 0;">
+    <div class="crtdiv" style="display: flex; align-items: center; justify-content: flex-end;">
+      <input type="checkbox" class="cart" aria-label="Select item" style="margin-right: 10px;" />
+      <div class="qty" style="display: flex; align-items: center;">
+        <span class="dec">-</span>
+        <span class="num">1</span>
+        <span class="inc">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+          
+    <div class="menu-item" style="display: flex; justify-content: space-between; align-items: flex-start; padding: 10px;">
+  <!-- Image -->
+  <div class="image-container" style="flex-shrink: 0;">
+    <img src="images/Yogurt-Granola.jpeg" alt="Yogurt & Granola Image" class="menu-item-img" />
+  </div>
+
+  <!-- Text and Description -->
+  <div class="menu-item-text" style="flex-grow: 1; margin-left: 10px;">
+    <h3 class="menu-item-heading">
+      <span class="menu-item-name">YOGURT & GRANOLA</span>
+      <span class="menu-item-calories">167 <img src="images/calories.png" alt="Calorie image" class="cal-img"/></span>
+    </h3>
+    <p class="menu-item-desc">
+      Indulge in a wholesome symphony of flavors with our Yogurt & Granola Delight, a delectable blend of creamy yogurt, crunchy granola, and succulent strawberries.
+    </p>
+  </div>
+
+  <!-- Price -->
+  <div style="align-self: flex-start; padding: 6% 2% 0 0;">
+    <span class="price">28.15<sup>SAR</sup></span>
+  </div>
+
+  <!-- Checkbox and Quantity -->
+  <div class="cont" style="padding: 11% 1% 0 0;">
+    <div class="crtdiv" style="display: flex; align-items: center; justify-content: flex-end;">
+      <input type="checkbox" class="cart" aria-label="Select item" style="margin-right: 10px;" />
+      <div class="qty" style="display: flex; align-items: center;">
+        <span class="dec">-</span>
+        <span class="num">1</span>
+        <span class="inc">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+          
+ <div class="menu-item" style="display: flex; justify-content: space-between; align-items: flex-start; padding: 10px;">
+  <!-- Image -->
+  <div class="image-container" style="flex-shrink: 0;">
+    <img src="images/avocado-toast.jpeg" alt="Avocado Toast Image" class="menu-item-img" />
+  </div>
+
+  <!-- Text and Description -->
+  <div class="menu-item-text" style="flex-grow: 1; margin-left: 10px;">
+    <h3 class="menu-item-heading">
+      <span class="menu-item-name">AVOCADO TOAST</span>
+      <span class="menu-item-calories">386 <img src="images/calories.png" alt="Calorie image" class="cal-img"/></span>
+    </h3>
+    <p class="menu-item-desc">
+      Embark on a journey of culinary bliss with our Avocado Toast Sensation, a tantalizing symphony of flavors and textures that will elevate your meal to new heights.
+    </p>
+  </div>
+
+  <!-- Price -->
+  <div style="align-self: flex-start; padding: 6% 2% 0 0;">
+    <span class="price">30.00<sup>SAR</sup></span>
+  </div>
+
+  <!-- Checkbox and Quantity -->
+   <!-- Checkbox and Quantity -->
+  <div class="cont" style="padding: 11% 1% 0 0;">
+    <div class="crtdiv" style="display: flex; align-items: center; justify-content: flex-end;">
+      <input type="checkbox" class="cart" aria-label="Select item" style="margin-right: 10px;" />
+      <div class="qty" style="display: flex; align-items: center;">
+        <span class="dec">-</span>
+        <span class="num">1</span>
+        <span class="inc">+</span>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+                                        <!-- END SNACKS -->
+
+
+
+                                        <!-- END MENU ITEMS -->
+   </main>
+   
+
+   <footer>
+    <div class="footer_container">
+        <div class="footer-content">
+            <img class="footerlogo" src="weblogo.png" alt="logo" width="130" margin-left="5%" >
+            <p id="enjoy">Anytime and anywhere, enjoy your delicious food!!</p>
+            
+        </div>
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+             <ul class="list">
+                <li><a href="mailto:clickdash@gmail.com">Email: ClickDash@gmail.com</a></li>
+
+             </ul>
+        </div>
+        <div class="footer-content">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/profile.php?id=61557462044147"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/click._dash/"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://twitter.com/Dash_Click"><i class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+            </div>
+    </div>
+    <div class="bottom-bar">
+        <p>&copy; 2024 ClickDash</p>
+    </div>
+</footer>
+
+<script>
+  // Check if the user preference for dark mode is stored in localStorage
+  const isDarkMode = localStorage.getItem('darkMode') === 'true';
+  // If it is, apply the dark mode class to the body
+  if (isDarkMode) {
+    document.body.classList.add('dark-mode');
+  }
+
+  function toggleDarkMode() {
+    const body = document.body;
+    // Toggle the dark mode class on the body
+    body.classList.toggle('dark-mode');
+    // Store the user's preference for dark mode in localStorage
+    localStorage.setItem('darkMode', body.classList.contains('dark-mode'));
+  }
+</script>
+
+</body>
+
+</html>
