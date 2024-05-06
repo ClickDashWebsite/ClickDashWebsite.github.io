@@ -691,7 +691,8 @@ body {
 
 /*Dark mode botton*/ 
 button.normal{
-  font-size: 5px ;
+  font-size: 12px ;
+  padding: 10px 20px;
   font-weight:600 ;
   padding: 15px 30px ;
   color: #fff ;
@@ -701,5 +702,6 @@ button.normal{
   border: none ;
   outline : none ;
   transition: 0.2s ;
+  margin-right: 50px;
 
 }
