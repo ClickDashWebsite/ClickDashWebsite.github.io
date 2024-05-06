@@ -40,10 +40,31 @@ h2 {
   text-shadow: none;
 }
 
-#logo {
-  float: left;
-  padding: 2% 0% 0% 2%;
+.poster_container {
+
+  margin-bottom: 5%;
+  display: flex;
+  
+  justify-content: center;
 }
+
+#posterpic {
+
+
+  padding-top: 2%;
+  padding-left: 5%;
+  padding-right: 8%;
+}
+
+#posterdis {
+
+  font-family: 'Poppins', sans-serif;
+  color: var(--black);
+  font-size: 40px;
+  padding-top: 4%;
+  padding-bottom: 3%;
+
+text-align: center;}
 
 main {
   height: auto;
@@ -90,4 +111,62 @@ body {
   --black: #ffffff;
   --light-orange:#333333;
   --orange:#333333;
+}
+/* Form Styling */
+form {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
+
+input[type="text"],
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="file"] {
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #FF6633;
 }
